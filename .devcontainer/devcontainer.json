@@ -6,7 +6,7 @@
         "version": "18"
       }
     },
-    "postCreateCommand": "npm install",
+    "postCreateCommand": "npm install && npm install @mui/material @emotion/react @emotion/styled @mui/icons-material",
     "customizations": {
       "vscode": {
         "extensions": [
