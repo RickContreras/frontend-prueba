@@ -1,26 +1,27 @@
 {
-    "name": "React Material-UI Dev Container",
-    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
-    "features": {
+  "name": "React Material-UI Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
+  "features": {
       "ghcr.io/devcontainers/features/node:1": {
-        "version": "18"
+          "version": "18"
       }
-    },
-    "postCreateCommand": "npm install && npm install -g create-react-app && cd gestor-tareas && npm install @mui/material @emotion/react @emotion/styled @mui/icons-material",
-    "customizations": {
+  },
+  "postCreateCommand": "cd gestor-tareas && npm install && npm install -g create-react-app",
+  "customizations": {
       "vscode": {
-        "extensions": [
-          "dbaeumer.vscode-eslint",
-          "esbenp.prettier-vscode",
-          "GitHub.copilot"
-        ]
+          "extensions": [
+              "dbaeumer.vscode-eslint",
+              "esbenp.prettier-vscode",
+              "GitHub.copilot"
+          ]
       }
-    },
-    "forwardPorts": [3000],
-    "portsAttributes": {
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
       "3000": {
-        "label": "React App",
-        "onAutoForward": "openBrowser"
+          "label": "React App",
+          "onAutoForward": "openBrowser"
       }
-    }
-  }
+  },
+  "workspaceFolder": "/workspaces/frontend-prueba/gestor-tareas"
+}
