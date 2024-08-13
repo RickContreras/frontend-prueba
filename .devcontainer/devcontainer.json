@@ -6,7 +6,7 @@
           "version": "18"
       }
   },
-  "postCreateCommand": "cd gestor-tareas && npm install && npm install -g create-react-app",
+  "postCreateCommand": "./postCreateCommand.sh",
   "customizations": {
       "vscode": {
           "extensions": [
@@ -15,13 +15,5 @@
               "GitHub.copilot"
           ]
       }
-  },
-  "forwardPorts": [3000],
-  "portsAttributes": {
-      "3000": {
-          "label": "React App",
-          "onAutoForward": "openBrowser"
-      }
-  },
-  "workspaceFolder": "/workspaces/frontend-prueba/gestor-tareas"
+  }
 }
